@@ -1,0 +1,1 @@
+Link to the docker image: https://hub.docker.com/repository/docker/s1prove/autoencoder/general
