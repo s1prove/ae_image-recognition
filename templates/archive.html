@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Archive Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1 class="text-center title">Archive</h1>
+    <div class="container">
+        {% for entry in archive_data %}
+        <div class="row mt-3">
+            <div class="col-md-1">
+                <h3>{{ loop.index }}</h3>
+            </div>
+            <div class="col-md-2">
+                <h2>Original Image</h2>
+                <img src="{{ entry['original_img'] }}" class="img-fluid" alt="Original Image">
+            </div>
+            <div class="col-md-3">
+                <h2>Decoded Image</h2>
+                <img src="{{ entry['decoded_img'] }}" class="img-fluid" alt="Decoded Image">
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+<footer>
+    <a class="btn btn-primary to_main_btn" href="{{ url_for('index') }}">Back to Home</a>
+</footer>
+</html>

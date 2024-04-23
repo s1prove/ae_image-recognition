@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Decoder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Decoder</h1>
+        <div class="square-background"></div>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="photo" class="btn-primary">Upload Photo</label>
+            <input type="file" name="photo" id="photo" accept="image/*">
+            <input class="btn-primary" type="submit" value="Decode Image">
+        </form>
+        <div class="divider"></div>
+        {% if original_img %}
+        <div class="image-wrapper">
+            <div>
+                <h2>Original Image</h2>
+                <img id="original-images" src="{{ original_img }}" alt="Original Image">
+            </div>
+            <div>
+                <h2>Decoded Image</h2>
+                <img id="decoded-image" src="{{ decoded_img }}" alt="Decoded Image">
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+<footer>
+    <a href="{{ url_for('archive') }}" class="btn-primary to_archive_btn">Archive</a>
+</footer>
+</html>

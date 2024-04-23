@@ -1,0 +1,155 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+  font-family: Segoe UI;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.square-background {
+  width: calc(50% - 0px);
+  height: 800px; 
+  background-color: #b6fdee; 
+  position: absolute;
+  top: calc(8% - 10px); 
+  left: 480px; 
+  z-index: -1;
+  box-shadow: 0 8px 16px rgba(1, 1, 1, 0.1); 
+}
+
+
+h1 {
+  color: #333;
+  font-size: 40px;
+  margin-bottom: 32px;
+  font-family: Tahoma;
+}
+
+h2 {
+  color: #666;
+  font-size: 28px;
+  margin-top: 32px;
+  font-family: Tahoma;
+}
+
+img {
+  width: 350px; 
+  height: 350px; 
+  margin-top: 20px;
+  border-radius: 12px;
+  border: 3px solid #1098ad;
+}
+
+form {
+  margin-bottom: 32px;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.image-wrapper img {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  flex: 1;
+  max-width: 400px;
+  height: auto;
+  margin: 0 32px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #1098ad;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 26px;
+  margin: 16px 32px;
+  transition: background-color 0.3s ease;
+  font-family: Segoe UI;
+}
+
+.btn-primary:hover {
+  background-color: #0c7687;
+}
+
+
+input[type="file"] {
+  display: none;
+}
+
+.divider {
+  width: 100%;
+  height: 5px;
+  background-color: #1098ad; 
+  margin-top: 64px;
+}
+
+.to_archive_btn{
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: Segoe UI;
+  text-decoration: none;
+}
+
+
+.title {
+    margin-top: -40px;
+    margin-bottom: -90px; 
+}
+
+.image-number {
+    font-size: 58px; 
+    margin-left: 90px;
+}
+
+.back-button {
+    margin-top: 500px;
+    margin-bottom: 50px; 
+}
+
+.col-md-1{
+  margin-right: -60px;
+  margin-top: 240px;
+}
+
+.col-md-2{
+    margin-left: 110px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    width: 250px; 
+    height: 250px; 
+}
+
+.col-md-3{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    width: 250px; 
+    height: 250px; 
+}
+
+.to_main_btn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.img-fluid{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
