@@ -2,8 +2,8 @@ from flask import Flask, render_template, request, redirect
 import os
 from werkzeug.utils import secure_filename
 import numpy as np
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import load_model 
+from tensorflow.keras.preprocessing import image  
 
 app = Flask(__name__)
 

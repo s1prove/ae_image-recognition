@@ -13,6 +13,7 @@ body {
   text-align: center;
 }
 
+
 .square-background {
   width: calc(50% - 0px);
   height: 800px; 
@@ -123,22 +124,21 @@ input[type="file"] {
 
 .col-md-1{
   margin-right: -60px;
-  margin-top: 240px;
+  margin-top: 250px;
 }
 
 .col-md-2{
-    margin-left: 110px;
+    margin-left: 75px;
     margin-right: 20px;
-    margin-bottom: 20px;
-    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-top: 70px;
     width: 250px; 
     height: 250px; 
 }
 
 .col-md-3{
     margin-left: 100px;
-    margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 70px;
     width: 250px; 
     height: 250px; 
 }
@@ -150,6 +150,12 @@ input[type="file"] {
 }
 
 .img-fluid{
+  max-width: 250px;  /* Set the maximum width */
+  max-height: 250px; /* Set the maximum height */
+  width: auto;       /* Maintain the aspect ratio */
+  height: auto;      /* Maintain the aspect ratio */
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  border-radius: 12px; /* Keep the border radius for styling consistency */
+  border: 3px solid #1098ad; /* Keep the border for styling consistency */
 }
