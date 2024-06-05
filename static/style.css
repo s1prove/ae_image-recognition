@@ -63,8 +63,10 @@ form {
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   flex: 1;
-  max-width: 400px;
-  height: auto;
+  max-width: 350px;  
+  max-height: 350px; 
+  width: auto;       
+  height: auto;      
   margin: 0 32px;
   transition: all 0.3s ease;
 }
@@ -150,12 +152,12 @@ input[type="file"] {
 }
 
 .img-fluid{
-  max-width: 250px;  /* Set the maximum width */
-  max-height: 250px; /* Set the maximum height */
-  width: auto;       /* Maintain the aspect ratio */
-  height: auto;      /* Maintain the aspect ratio */
+  max-width: 250px; 
+  max-height: 250px; 
+  width: auto;       
+  height: auto;     
   margin-top: 20px;
   margin-bottom: 50px;
-  border-radius: 12px; /* Keep the border radius for styling consistency */
-  border: 3px solid #1098ad; /* Keep the border for styling consistency */
+  border-radius: 12px; 
+  border: 3px solid #1098ad; 
 }
